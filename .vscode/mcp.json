@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "google-stitch": {
+      "type": "http",
+      "url": "https://stitch.googleapis.com/mcp",
+      "headers": {
+        "Accept": "application/json",
+        "X-Goog-Api-Key": "${input:google-stitch-api-key}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "google-stitch-api-key",
+      "description": "Google Stitch API key",
+      "password": true
+    }
+  ]
+}
